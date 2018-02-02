@@ -103,13 +103,13 @@ deploy-app-to-oce:
 #        istioctl get routerule route-rules -o yaml
 #
 # Uncomment and use the "replace" step to update the route rule when you change it
-    - script:
-      name: Replace traffic route rule with istioctl
-      code: |
-        echo "Replace traffic route rule with istioctl"
-        istioctl replace -f route-rules.yaml
-        echo "Check if the rule has been set correctly"
-        istioctl get routerule route-rules -o yaml
+ #   - script:
+ #     name: Replace traffic route rule with istioctl
+ #     code: |
+ #       echo "Replace traffic route rule with istioctl"
+ #       istioctl replace -f route-rules.yaml
+ #       echo "Check if the rule has been set correctly"
+ #       istioctl get routerule route-rules -o yaml
 #
 # Uncomment and use the "delete" step to delete the route rule, when not needed. After that comment the "delete" step
 #    - script:
